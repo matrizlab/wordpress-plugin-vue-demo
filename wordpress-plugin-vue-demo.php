@@ -1,10 +1,10 @@
 <?php
 /**
  * Plugin Name:     Wordpress Plugin Vue Demo
- * Plugin URI:      PLUGIN SITE HERE
- * Description:     PLUGIN DESCRIPTION HERE
- * Author:          YOUR NAME HERE
- * Author URI:      YOUR SITE HERE
+ * Plugin URI:      https://matrizlab.com/vue-plugin-starter
+ * Description:     Wordpress plugin demo with Vue
+ * Author:          matrizlab
+ * Author URI:      https://matrizlab.com/
  * Text Domain:     wordpress-plugin-vue-demo
  * Domain Path:     /languages
  * Version:         0.1.0
