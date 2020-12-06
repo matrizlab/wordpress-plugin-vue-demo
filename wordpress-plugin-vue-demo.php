@@ -23,4 +23,14 @@ function front_enqueue_script() {
 add_action( 'wp_enqueue_scripts', 'front_enqueue_style' );
 add_action( 'wp_enqueue_scripts', 'front_enqueue_script' );
 
+add_shortcode("wordpress-plugin-vue-demo", "displayUsers");
 
+function displayUsers(){
+	echo (
+		"<div id='app'>
+			<users-component-service></users-component-service>
+		</div>"
+	);
+
+	wp_enqueue_script('vueapp', plugin_dir_url(__FILE__).'js/app.js');
+}
