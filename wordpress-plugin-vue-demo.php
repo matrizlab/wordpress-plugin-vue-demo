@@ -12,4 +12,15 @@
  * @package         Wordpress_Plugin_Vue_Demo
  */
 
-// Your code starts here.
+function front_enqueue_style() {
+	wp_enqueue_style('bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css');
+}
+
+function front_enqueue_script() {
+	wp_enqueue_script('vue2','https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js');
+}
+
+add_action( 'wp_enqueue_scripts', 'front_enqueue_style' );
+add_action( 'wp_enqueue_scripts', 'front_enqueue_script' );
+
+
